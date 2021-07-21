@@ -1,0 +1,23 @@
+{
+    "name": "learning-records",
+    "version": "1.0.0",
+    "description": "This is jokerxin's web learning records!",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Jxpro/web-learning.git"
+    },
+    "keywords": [
+        "html",
+        "css",
+        "js"
+    ],
+    "author": "jokerxin",
+    "license": "ISC",
+    "dependencies": {
+        "jquery": "^3.6.0"
+    }
+}

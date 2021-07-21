@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joker Xin's Test Page</title>
+    <style>
+        .clock {
+            background-image: url("../img/13/bg.png");
+            width: 300px;
+            height: 300px;
+            background-size: 100%;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        .hour,
+        .min,
+        .sec {
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            transform-origin: bottom center;
+        }
+
+        .hour {
+            width: 5px;
+            height: 27%;
+            background-color: black;
+            animation: run 216s linear infinite;
+        }
+
+        .min {
+            width: 4px;
+            height: 36%;
+            background-color: gray;
+            animation: run 18s linear infinite;
+        }
+
+        .sec {
+            width: 3px;
+            height: 40%;
+            background-color: red;
+            animation: run 3s linear infinite;
+        }
+
+        @keyframes run {
+            from {
+                transform: translateX(-50%) rotateZ(0);
+            }
+
+            to {
+                transform: translateX(-50%) rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clock">
+        <div class="hour"></div>
+        <div class="min"></div>
+        <div class="sec"></div>
+    </div>
+</body>
+
+</html>

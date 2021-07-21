@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joker Xin's Test Page</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../src/FontAwesome Pro v6.0.0 alpha1/css/all.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2648612_ihjvm6qiklj.css">
+    <link rel="preload" href="//at.alicdn.com/t/font_2648612_ihjvm6qiklj.woff2" as="font" type="font/woff2"
+        crossorigin="anonymous">
+    <style>
+        .top-bar-wrapper {
+            background-color: #E3E4E5;
+            height: 30px;
+            line-height: 28px;
+            border-bottom: 1px solid #DDDDDD;
+        }
+
+        .top-bar {
+            background-color: #E3E4E5;
+            width: 1100px;
+            margin: 0 auto;
+            font-size: 12px;
+            color: #999999;
+        }
+
+        .clearfix::before,
+        .clearfix::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .nav {
+            float: right;
+        }
+
+        .loc,
+        .nav li {
+            float: left;
+        }
+
+        .top-bar a {
+            text-decoration: none;
+            color: #999999;
+        }
+
+        .top-bar a:hover {
+            text-decoration: none;
+            color: #F10215;
+        }
+
+        .top-bar .current-loc {
+            padding: 0 10px;
+            border: 1px solid transparent;
+            position: absolute;
+            z-index: 999;
+        }
+
+        .top-bar .change-loc {
+            display: none;
+            width: 300px;
+            height: 442px;
+            background-color: #fff;
+            position: absolute;
+            border: 1px solid #CCC;
+            padding: 10px;
+            top: 30px;
+        }
+
+        .top-bar .loc:hover .current-loc {
+            color: #F10215;
+            background-color: #fff;
+            border: 1px solid #CCC;
+            border-bottom: 2px solid #fff;
+        }
+
+        .top-bar .loc:hover .change-loc {
+            display: block;
+        }
+
+        .nav li:nth-child(3) a,
+        .nav li:nth-child(11) a {
+            color: #F10215;
+        }
+
+        .line {
+            width: 1px;
+            height: 10px;
+            background-color: #CCCCCC;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        .fa-solid.fa-angle-down {
+            padding: 0 3px;
+            color: #999999;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar-wrapper">
+        <div class="top-bar clearfix">
+            <div class="loc">
+                <div class="current-loc">
+                    <i class="fa-solid fa-location-dot" style="color: #F10215; font-size: 12px;"></i>
+                    <a href="javascript:;">海南</a>
+                </div>
+                <div class="change-loc"></div>
+            </div>
+            <ul class="nav">
+                <li>
+                    <a href="javascript:;">你好，请登录</a>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <a href="javascript:;">免费注册</a>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <a href="javascript:;">我的订单</a>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <a href="javascript:;">我的京东</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <a href="javascript:;">京东会员</a>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <a href="javascript:;">企业采购 <i class="fa-solid fa-angle-down"></i></a>
+                </li>
+                <li class="line"></li>
+                <li> 客户服务 <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <li class="line"></li>
+                <li> 网站导航 <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <li class="line"></li>
+                <li>手机京东</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
