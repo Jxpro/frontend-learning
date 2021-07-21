@@ -1,0 +1,169 @@
+.top-bar-wrapper {
+    background-color: #000;
+
+    .top-bar {
+        max-width: 1200px;
+        height: 48px;
+        background-color: #000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+
+        a {
+            text-decoration: none;
+            color: #eee;
+
+            &:hover {
+                color: rgb(180, 179, 179);
+            }
+        }
+
+        .menu {
+            .menu-icon {
+                height: 48px;
+                width: 48px;
+                box-sizing: border-box;
+                padding: 0 15px;
+
+                .line {
+                    width: 18px;
+                    height: 1px;
+                    background-color: #fff;
+                    position: absolute;
+                    transform-origin: left top;
+                    transition: 0.36s;
+                }
+
+                .first {
+                    top: 15px;
+                }
+
+                .second {
+                    top: 24px;
+                }
+
+                .third {
+                    top: 33px;
+                }
+            }
+
+            .nav {
+                display: none;
+                position: absolute;
+                top: 48px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: #000;
+
+                li {
+                    width: 80%;
+                    border-bottom: 1px #313030 solid;
+                    margin: 0 auto;
+
+                    a {
+                        display: block;
+                        line-height: 44px;
+                        font-size: 13px;
+                    }
+
+                    &:last-of-type a {
+                        display: inline;
+                        padding-right: 6px;
+                    }
+
+                    span {
+                        line-height: 44px;
+                        font-size: 13px;
+                        color: #eee;
+                    }
+                }
+            }
+
+            &:hover {
+                .nav {
+                    display: block;
+                }
+                .line {
+                    width: 18 * 1.32px;
+                }
+
+                .first {
+                    transform: rotateZ(45deg);
+                }
+
+                .second {
+                    opacity: 0;
+                }
+
+                .third {
+                    transform: rotateZ(-45deg);
+                }
+            }
+        }
+
+        .logo {
+            margin: 0 10px;
+
+            a {
+                text-indent: -99999px;
+                display: block;
+                width: 122px;
+                height: 32px;
+                background-image: url(../img/meitu/dff63979.sprites-index@2x.png);
+                background-size: 400px;
+            }
+        }
+
+        .user-info {
+            width: 48px;
+            line-height: 48px;
+            text-align: center;
+        }
+
+        @media screen {
+            @media (min-width: 768px) {
+                .logo {
+                    order: 1;
+                }
+
+                .menu {
+                    flex: auto;
+                    order: 2;
+
+                    .menu-icon {
+                        display: none;
+                    }
+
+                    .nav {
+                        display: flex;
+                        position: static;
+
+                        li {
+                            text-align: center;
+                            border: none;
+                            flex: auto;
+
+                            a {
+                                line-height: 48px;
+                            }
+                        }
+
+                        span {
+                            display: none;
+                        }
+                    }
+
+                    &:hover .nav {
+                        display: flex;
+                    }
+                }
+
+                .user-info {
+                    order: 3;
+                }
+            }
+        }
+    }
+}
