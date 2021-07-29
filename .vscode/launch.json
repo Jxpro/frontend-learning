@@ -1,0 +1,24 @@
+{
+    // 使用 IntelliSense 了解相关属性。
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome", // 谷歌--调试html里面的js
+            "request": "launch", // 模式launch模式：由 vscode 来启动一个独立的具有 debug 模式的  attach模式：附加于（也可以说“监听”）一个已经启动的程序（必须已经开启 Debug 模式）
+            "name": "LaunchInChrome", // 名字自个起个好听的吧，
+            // "url": "http://localhost/", // 本地http服务路径 ,比如用apache服务，这里我有，但是懒得开，所以我配置文件路径好了
+            "file": "${file}", // 当前打开的文件， 没开本地http服务就配置本地文件路径打开
+            "webRoot": "${workspaceFolder}", // 也是chrome插件带的，指定根目录或者执行文件,${workspaceRoot}:就是你打开vscode读取的项目目录
+            "sourceMaps": false, // 设置false,我一开始设置true，断点灰色，调试不了
+            "userDataDir": "${workspaceFolder}/.vscode/chrome", // 临时目录,专门保存调试过程产生的东西,这个字段是为了重新打开一个浏览器窗口，不会强制关闭已经打开的浏览器
+        },
+        {
+            "type": "node", // 单独调试js文件
+            "request": "launch",
+            "name": "Nodejs调试",
+            "program": "${file}"
+        }
+    ]
+}

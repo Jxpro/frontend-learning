@@ -1,0 +1,37 @@
+body {
+    background-color: blanchedalmond;
+}
+
+h1 {
+    width: 300px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px auto;
+    color: blueviolet;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: cornflowerblue;
+}
+
+.img-wrapper {
+    margin: 30px 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#placeholder {
+    display: block;
+    margin: 0 auto;
+}
+
+#description {
+    width: 300px;
+    text-align: center;
+    margin: 30px auto;
+    color: violet;
+    font-size: 24px;
+}
