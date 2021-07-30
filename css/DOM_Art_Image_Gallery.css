@@ -9,6 +9,7 @@ h1 {
     margin: 10px auto;
     color: blueviolet;
     text-align: center;
+    margin-top: 50px;
 }
 
 a {
@@ -20,7 +21,11 @@ a {
 .img-wrapper {
     margin: 30px 200px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.img-wrapper img {
+    margin: 10px;
 }
 
 #placeholder {

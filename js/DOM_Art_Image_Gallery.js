@@ -9,7 +9,7 @@ function showPic(witchPic) {
     placeholder.src = witchPic.href;
 
     if (description) {
-        let text = witchPic.innerText;
+        let text = witchPic.title;
         description.firstChild.nodeValue = text;
     }
     return true;
@@ -39,15 +39,15 @@ function prePlaceHolder() {
 
     let imgNode = document.createElement('img');
     imgNode.id = 'placeholder';
-    imgNode.src = '../src/img/Image_Gallery/infinity-(1).jpg';
+    imgNode.src = '../src/img/Image_Gallery/placeholder.gif';
     imgNode.alt = 'My Image Galley';
     // imgNode.height = 520; // 520px => 0
     // imgNode.style.height = '520px';
-    imgNode.setAttribute('height', '500px');
+    imgNode.setAttribute('height', '300px');
 
     let pNode = document.createElement('p');
     pNode.id = 'description';
-    let text = document.createTextNode('请选择一张图片');
+    let text = document.createTextNode('Choose an image');
     pNode.appendChild(text);
 
     insertAfter(imgNode, target);
