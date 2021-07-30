@@ -19,3 +19,12 @@ function insertAfter(newElement, targetElement) {
         parent.insertBefore(newElement, targetElement.nextSibling);
     }
 }
+
+function addClass(element, value) {
+    // if (!element.className) {
+    //     element.className = value;
+    // } else {
+    //     element.className += ' ' + value;
+    // }
+    element.className = element.className ? (element.className + ' ' + value) : value;
+}
