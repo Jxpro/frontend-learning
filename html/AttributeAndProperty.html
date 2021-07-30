@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 中的attribute 和 property</title>
+</head>
+
+<body>
+    <a id="type" class="initial" href="e_01.html"></a>
+    <script>
+        let e = document.getElementById('type');
+        e.attr1 = 'my1';
+        e.setAttribute('attr2', 'my2');
+        console.log(e.id);
+        console.log(e.className);
+        console.log(e.classList);
+        console.log(e.href);
+        console.log(e.attr1);
+        console.log(e.attr2);
+
+        console.log('\n');
+        console.log(e.getAttribute('id'));
+        console.log(e.getAttribute('class'));
+        console.log(e.getAttribute('href'));
+        console.log(e.getAttribute('attr1'));
+        console.log(e.getAttribute('attr2'));
+
+        e.href = 'e_02.html';
+        console.log(e.href);
+        console.log(e.getAttribute('href'));
+
+        e.href = '//e_02.html';
+        console.log(e.href);
+        console.log(e.getAttribute('href'));
+    </script>
+</body>
+
+</html>
