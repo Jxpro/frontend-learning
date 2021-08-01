@@ -5,6 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Listen for Xdebug",
+            "type": "php",
+            "request": "launch",
+            "port": 9000
+        },
+        {
             "type": "chrome", // 谷歌--调试html里面的js
             "request": "launch", // 模式launch模式：由 vscode 来启动一个独立的具有 debug 模式的  attach模式：附加于（也可以说“监听”）一个已经启动的程序（必须已经开启 Debug 模式）
             "name": "LaunchInChrome", // 名字自个起个好听的吧，
