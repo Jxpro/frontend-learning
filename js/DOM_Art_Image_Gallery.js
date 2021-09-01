@@ -9,8 +9,7 @@ function showPic(witchPic) {
     placeholder.src = witchPic.href;
 
     if (description) {
-        let text = witchPic.title;
-        description.firstChild.nodeValue = text;
+        placeholder.onload = () => description.firstChild.nodeValue = witchPic.title;
     }
     return true;
 }
