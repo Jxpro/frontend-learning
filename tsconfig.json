@@ -1,0 +1,20 @@
+{
+    "include": [
+        "./ts/**/*"
+    ],
+    "compileOnSave": true,
+    "compilerOptions": {
+        "outDir": "./js/compiled",
+        "target": "ES2015",
+        "module": "ES2015",
+        "pretty": true,
+        "strict": true,
+        "allowJs": true,
+        "checkJs": true,
+        "noEmitOnError": true,
+        // "removeComments": true
+        // "declaration": true,
+        // "declarationDir": "./ts/d.ts",
+        // "watch": true,
+    }
+}
