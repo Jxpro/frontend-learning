@@ -1,0 +1,47 @@
+{
+    "root": true,
+    "env": {
+        "node": true,
+        "es2021": true,
+        "jquery": true,
+        "browser": true,
+        "commonjs": false
+    },
+    "extends": [
+        "plugin:vue/essential",
+        "eslint:recommended"
+    ],
+    "plugins": [
+        "html",
+        "vue"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "globals": {
+        "Vue": "readonly"
+    },
+    "rules": {
+        "no-unused-vars": "off",
+        "no-debugger": "off",
+        "no-empty": "off",
+        "eol-last": "warn",
+        "semi": [
+            "warn",
+            "always"
+        ],
+        "quotes": [
+            "warn",
+            "single"
+        ],
+        "eqeqeq": [
+            "error",
+            "always"
+        ],
+        "arrow-parens": [
+            "warn",
+            "as-needed"
+        ]
+    }
+}
