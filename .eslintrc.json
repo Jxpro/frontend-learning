@@ -7,18 +7,20 @@
         "browser": true,
         "commonjs": false
     },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
     "extends": [
         "plugin:vue/essential",
         "eslint:recommended"
     ],
     "plugins": [
+        "@typescript-eslint",
         "html",
         "vue"
     ],
-    "parserOptions": {
-        "ecmaVersion": 12,
-        "sourceType": "module"
-    },
     "globals": {
         "Vue": "readonly"
     },
