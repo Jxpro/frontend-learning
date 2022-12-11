@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joker Xin's Page</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3821046_4e71lq3o03p.css">
+</head>
+
+<body>
+    <h2>关于css属性vertical-align的baseline值的问题</h2>
+    用img标签和icon-font字体文件实现的两个小图标，他们在垂直方向上的距离有偏差，这与vertical-align属性的baseline值有关
+    <br>
+    浏览器下放大一些看
+    <br>
+    <br>
+    <div>------------问题展示------------</div>
+    <div>
+        abc你好<img src="../src/img/arrow.png" style="height:16px;">
+        <i class="iconfont icon-jinrujiantouxiao"></i>abc
+    </div>
+    <br>
+    <div>---通过vertical-align属性对齐---</div>
+    <div>
+        abc你好<img src="../src/img/arrow.png" style="height:1em; vertical-align: -0.12em;">
+        <i class="iconfont icon-jinrujiantouxiao"></i>abc
+    </div>
+    <br>
+    <div>--------通过flex布局对齐--------</div>
+    <div style="display: flex; align-items: center;">
+        abc你好<img src="../src/img/arrow.png" style="height: 16px;">
+        <i class="iconfont icon-jinrujiantouxiao"></i>abc
+    </div>
+</body>
+
+</html>
