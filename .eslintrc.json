@@ -7,24 +7,21 @@
         "browser": true,
         "commonjs": false
     },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaVersion": 12,
+        "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "extends": [
-        "plugin:vue/essential",
-        "eslint:recommended"
-    ],
     "plugins": [
-        "@typescript-eslint",
         "html",
-        "vue"
+        "@typescript-eslint"
     ],
-    "globals": {
-        "Vue": "readonly"
-    },
     "rules": {
+        "@typescript-eslint/no-unused-vars": "off",
         "no-unused-vars": "off",
         "no-debugger": "off",
         "no-empty": "off",
